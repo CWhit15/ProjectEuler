@@ -44,12 +44,19 @@ def problem3(x):
     print(result)
 
 
+#lowest number that is evenly divded by the numbers 1-20
 def problem6():
     found = False
 
+    #the problem stated that 2520 was the number divisible by the numbers 1-10 so I know my number is going to be a
+    #multiple of this number. I can start here and increment by this number to cut down on total numbers analyzed
     i = 2520
 
     while (not found):
+        #only need to look at certain numbers rather than all 1-20 since I know, for example, if a number is divisble
+        #by 20, it is also divisible by 10, 2, etc.
+
+        # I started with 11-20 but really I only need to look at the primes between 1-20 and 20 itself
         if (i % 20 == 0) and (i % 19 == 0) and (i % 18 == 0) and (i % 17 == 0) and (i % 16 == 0) and (i % 15 == 0) and (i % 14 == 0) and (i % 13 == 0) and (i % 12 == 0) and (i % 11 == 0):
             found = True
         else:

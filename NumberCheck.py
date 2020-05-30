@@ -24,9 +24,11 @@ def isFactor(number, divisor):
 def highestPrimeFactor(x):
     highest = -1
 
+    # reduce down until no longer divisible by 2. If it's even and not 2, it cant be prime
     while x % 2 == 0:
         highest = 2
         x //= 2
+
 
     for i in range(3, int(math.sqrt(x)) + 1, 2):
         if x % i == 0:
