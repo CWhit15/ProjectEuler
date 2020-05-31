@@ -10,7 +10,7 @@ def isEven(x):
 #check if number is prime
 def isPrime(x):
 
-    for i in range(2, math.sqrt(x)):
+    for i in range(2, int(math.sqrt(x)) + 1):
         if x % i == 0:
             return False
 

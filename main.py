@@ -8,4 +8,9 @@ import EulerProblems
 
 #EulerProblems.problem5()
 
-EulerProblems.problem6(100)
+#EulerProblems.problem6(100)
+
+#EulerProblems.problem10()
+
+EulerProblems.problem20(100)
+

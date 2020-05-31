@@ -75,3 +75,37 @@ def problem6(x):
         sumOfSquare += (i ** 2)
 
     print(squareOfSum - sumOfSquare)
+
+
+
+def problem10():
+    #2 is prime so we start with that
+    sum = 2
+
+    #start index at 3 since we already have 2 included
+    i = 3
+
+    #while we're not at 2,000,000 check if number is prime and add it to our running sum if it is
+    while i < 2000000:
+        if NumberCheck.isPrime(i):
+            sum += i
+            
+
+        i += 2
+
+    print(sum)
+
+
+#sum digits of 100!
+def problem20(x):
+    number = x
+    sum = 0
+
+    for i in range(x-1,0, -1):
+        number *= i
+
+    for i in str(number):
+        sum += int(i)
+
+    print(sum)
+
