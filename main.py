@@ -6,6 +6,6 @@ import EulerProblems
 
 #EulerProblems.problem3(600851475143)
 
-EulerProblems.problem6()
+#EulerProblems.problem5()
 
-
+EulerProblems.problem6(100)

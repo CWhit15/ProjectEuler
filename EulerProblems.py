@@ -45,7 +45,7 @@ def problem3(x):
 
 
 #lowest number that is evenly divded by the numbers 1-20
-def problem6():
+def problem5():
     found = False
 
     #the problem stated that 2520 was the number divisible by the numbers 1-10 so I know my number is going to be a
@@ -65,3 +65,13 @@ def problem6():
     print(i)
 
 
+def problem6(x):
+
+    squareOfSum = (int(x+1)*int(x/2)) ** 2
+
+    sumOfSquare = 0
+
+    for i in range(1, (x+1)):
+        sumOfSquare += (i ** 2)
+
+    print(squareOfSum - sumOfSquare)
